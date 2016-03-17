@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<title>仿淘宝商品属性规格、颜色、库存等联动自动生成表格</title>
+	</head>
+
+	<body>
+
+<div class="container-fluid">
+
+<br>
+	<div class="row">
+	<div class="col-sm-3 col-md-2 .col-xs-6 sidebar"></div>
+
+<div class="col-sm-6 col-md-8 main">
+<h3>仿淘宝商品属性规格、颜色、库存等联动自动生成表格</h3>
+<br>
+<div id="parameter">
+	  
+	<div class="form-group"	id="color">
+		<label for="">颜色：</label>											
+			<input type="checkbox" class="parameter_color" value="白色" name="brandcolor[]" datatext="白色">白色														
+			<input type="checkbox" class="parameter_color" value="银色" name="brandcolor[]" datatext="银色">银色														
+			<input type="checkbox" class="parameter_color" value="黑色" name="brandcolor[]" datatext="黑色">黑色	  
+	</div>
+
+	<div class="form-group"	id="memory">
+		<label for="">内存：</label>
+			<input type="checkbox" value="3" class="parameter_memory" id="memory3" name	= "brandmemory"	datatext="4GB">4GB				
+			<input type="checkbox" value="4" class="parameter_memory" id="memory4" name	= "brandmemory"	datatext="8GB">8GB				
+			<input type="checkbox" value="5" class="parameter_memory" id="memory5" name	= "brandmemory"	datatext="16GB">16GB				
+			<input type="checkbox" value="6" class="parameter_memory" id="memory6" name	= "brandmemory"	datatext="32GB">32GB				
+			<input type="checkbox" value="7" class="parameter_memory" id="memory7" name	= "brandmemory"	datatext="64GB">64GB		  
+	</div> 
+	  
+	  <div class="form-group" id="parameter_info">
+		  <table class="table table-bordered">
+			  <thead>
+			  <th>颜色</th>
+			  <th>内存</th>
+			  <th>价钱</th>
+			  <th>库存</th>
+			  </thead>
+			  <tbody id="parameter_info_tb">
+			  </tbody>
+		  </table>
+		  
+	  </div>
+	<div class="form-group">
+    <label for="">总库存：</label>
+    <input type="input" class="form-control"  style="width:300px;" name="stock" id="stock" disabled="disabled">
+  </div>  
+	 
+  </div>
+  </div>
+  <div class="col-sm-3 col-md-2 .col-xs-6 sidebar"></div>
+ </div>
+  </div>
+
+</body>
+</html>
+<script src="js/jquery-2.1.1.min.js?v=201506021626"></script>
+<script src="js/goodsadd.js?v=201506021626"></script>
